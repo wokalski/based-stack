@@ -14,13 +14,13 @@
 - Cilium
 
 ## CSI
-- Linstor
-- OpenEBS
+- Linstor (via Piraeus operator, possibly with K8S api instead of a separate etcd cluster)
+- OpenEBS (very simple and a good option for initial bootstrapping, especially for local/hostpath PVs)
 - Longhorn: Simple but annoying and slow. The most annoying tihng is that CPU spikes lead to read only FS which fuck things up.
 
 ## DB
 - Clickhouse
-- Postgres (which operator?)
+- Postgres (with CNPG operator that will cover everything from HA to connection pooling to backups via CRDs)
 
 ## Frontend
 - React
@@ -38,6 +38,7 @@
 ## Observability/Metrics
 - Store logs in Clickhouse
 - Loki is fine too....
+- Vector.dev as collection and delivery pipeline for logs, metrics, traces. (VRL is very performant and robust)
 - Prometheus
 - Grafana
 - Sysdig
