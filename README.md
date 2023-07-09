@@ -45,3 +45,8 @@
 
 ## Object storage
 - MinIO
+
+## GitOps
+- Flux
+- ArgoCD
+- Terraform
