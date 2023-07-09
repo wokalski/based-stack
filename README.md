@@ -42,3 +42,6 @@
 - Grafana
 - Sysdig
 - Netdata
+
+## Object storage
+- MinIO
